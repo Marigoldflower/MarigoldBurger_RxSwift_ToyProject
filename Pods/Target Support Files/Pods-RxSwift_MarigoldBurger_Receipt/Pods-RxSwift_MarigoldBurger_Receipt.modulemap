@@ -1,0 +1,6 @@
+framework module Pods_RxSwift_MarigoldBurger_Receipt {
+  umbrella header "Pods-RxSwift_MarigoldBurger_Receipt-umbrella.h"
+
+  export *
+  module * { export * }
+}

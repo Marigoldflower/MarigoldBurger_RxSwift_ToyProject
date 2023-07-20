@@ -9,21 +9,75 @@
 /* Begin PBXBuildFile section */
 		EA3185922A6690A2003D433F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185912A6690A2003D433F /* AppDelegate.swift */; };
 		EA3185942A6690A2003D433F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185932A6690A2003D433F /* SceneDelegate.swift */; };
-		EA3185962A6690A2003D433F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185952A6690A2003D433F /* ViewController.swift */; };
+		EA3185962A6690A2003D433F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185952A6690A2003D433F /* MenuController.swift */; };
 		EA3185992A6690A2003D433F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3185972A6690A2003D433F /* Main.storyboard */; };
 		EA31859B2A6690A3003D433F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA31859A2A6690A3003D433F /* Assets.xcassets */; };
 		EA31859E2A6690A3003D433F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA31859C2A6690A3003D433F /* LaunchScreen.storyboard */; };
+		EA3185AA2A669BD4003D433F /* MarigoldBurgerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185A92A669BD4003D433F /* MarigoldBurgerData.swift */; };
+		EA3185AC2A66A472003D433F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA3185AB2A66A472003D433F /* GoogleService-Info.plist */; };
+		EA3185AE2A66A7F3003D433F /* MarigoldBurgerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185AD2A66A7F3003D433F /* MarigoldBurgerViewModel.swift */; };
+		EA3185B22A66AA9B003D433F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185B12A66AA9B003D433F /* Helpers.swift */; };
+		EA3185B42A66AC98003D433F /* ReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185B32A66AC98003D433F /* ReceiptController.swift */; };
+		EA3185B72A66AD9E003D433F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3185B62A66AD9E003D433F /* MenuCell.swift */; };
+		EA7A96AC2A68DA580049195E /* Poppins-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A42A68D8C70049195E /* Poppins-Black.otf */; };
+		EA7A96AD2A68DA5A0049195E /* Poppins-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A969F2A68D8C70049195E /* Poppins-BlackItalic.otf */; };
+		EA7A96AE2A68DA5D0049195E /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A969B2A68D8C60049195E /* Poppins-Bold.otf */; };
+		EA7A96AF2A68DA5F0049195E /* Poppins-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A82A68D8C70049195E /* Poppins-BoldItalic.otf */; };
+		EA7A96B02A68DA610049195E /* Poppins-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A52A68D8C70049195E /* Poppins-ExtraBold.otf */; };
+		EA7A96B12A68DA630049195E /* Poppins-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A32A68D8C70049195E /* Poppins-ExtraBoldItalic.otf */; };
+		EA7A96B22A68DA670049195E /* Poppins-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A72A68D8C70049195E /* Poppins-ExtraLight.otf */; };
+		EA7A96B32A68DA690049195E /* Poppins-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A92A68D8C80049195E /* Poppins-ExtraLightItalic.otf */; };
+		EA7A96B42A68DA6C0049195E /* Poppins-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A02A68D8C70049195E /* Poppins-Italic.otf */; };
+		EA7A96B52A68DA6E0049195E /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A969D2A68D8C70049195E /* Poppins-Light.otf */; };
+		EA7A96B62A68DA700049195E /* Poppins-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A12A68D8C70049195E /* Poppins-LightItalic.otf */; };
+		EA7A96B72A68DA710049195E /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A62A68D8C70049195E /* Poppins-Medium.otf */; };
+		EA7A96B82A68DA750049195E /* Poppins-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96AA2A68D8C80049195E /* Poppins-MediumItalic.otf */; };
+		EA7A96B92A68DA770049195E /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A969E2A68D8C70049195E /* Poppins-Regular.otf */; };
+		EA7A96BA2A68DA790049195E /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A969C2A68D8C60049195E /* Poppins-SemiBold.otf */; };
+		EA7A96BB2A68DA7B0049195E /* Poppins-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96AB2A68D8C80049195E /* Poppins-SemiBoldItalic.otf */; };
+		EA7A96BC2A68DA7D0049195E /* Poppins-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A96A22A68D8C70049195E /* Poppins-Thin.otf */; };
+		EA7A96BD2A68DA7F0049195E /* Poppins-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA7A969A2A68D8C60049195E /* Poppins-ThinItalic.otf */; };
+		EA7A96C22A68ED410049195E /* OrdersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A96C12A68ED410049195E /* OrdersListView.swift */; };
+		F7A016627E6C053CCD4CA890 /* Pods_RxSwift_MarigoldBurger_Receipt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F792AA68098027222530EAF /* Pods_RxSwift_MarigoldBurger_Receipt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F792AA68098027222530EAF /* Pods_RxSwift_MarigoldBurger_Receipt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_MarigoldBurger_Receipt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A972B1C4662BADF46A67D5 /* Pods-RxSwift_MarigoldBurger_Receipt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_MarigoldBurger_Receipt.release.xcconfig"; path = "Target Support Files/Pods-RxSwift_MarigoldBurger_Receipt/Pods-RxSwift_MarigoldBurger_Receipt.release.xcconfig"; sourceTree = "<group>"; };
 		EA31858E2A6690A2003D433F /* RxSwift_MarigoldBurger_Receipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwift_MarigoldBurger_Receipt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3185912A6690A2003D433F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3185932A6690A2003D433F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA3185952A6690A2003D433F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA3185952A6690A2003D433F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		EA3185982A6690A2003D433F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA31859A2A6690A3003D433F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA31859D2A6690A3003D433F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA31859F2A6690A3003D433F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3185A92A669BD4003D433F /* MarigoldBurgerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarigoldBurgerData.swift; sourceTree = "<group>"; };
+		EA3185AB2A66A472003D433F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA3185AD2A66A7F3003D433F /* MarigoldBurgerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarigoldBurgerViewModel.swift; sourceTree = "<group>"; };
+		EA3185B12A66AA9B003D433F /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		EA3185B32A66AC98003D433F /* ReceiptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptController.swift; sourceTree = "<group>"; };
+		EA3185B62A66AD9E003D433F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		EA7A969A2A68D8C60049195E /* Poppins-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.otf"; sourceTree = "<group>"; };
+		EA7A969B2A68D8C60049195E /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
+		EA7A969C2A68D8C60049195E /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
+		EA7A969D2A68D8C70049195E /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
+		EA7A969E2A68D8C70049195E /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		EA7A969F2A68D8C70049195E /* Poppins-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.otf"; sourceTree = "<group>"; };
+		EA7A96A02A68D8C70049195E /* Poppins-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.otf"; sourceTree = "<group>"; };
+		EA7A96A12A68D8C70049195E /* Poppins-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.otf"; sourceTree = "<group>"; };
+		EA7A96A22A68D8C70049195E /* Poppins-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.otf"; sourceTree = "<group>"; };
+		EA7A96A32A68D8C70049195E /* Poppins-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		EA7A96A42A68D8C70049195E /* Poppins-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.otf"; sourceTree = "<group>"; };
+		EA7A96A52A68D8C70049195E /* Poppins-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.otf"; sourceTree = "<group>"; };
+		EA7A96A62A68D8C70049195E /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
+		EA7A96A72A68D8C70049195E /* Poppins-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.otf"; sourceTree = "<group>"; };
+		EA7A96A82A68D8C70049195E /* Poppins-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.otf"; sourceTree = "<group>"; };
+		EA7A96A92A68D8C80049195E /* Poppins-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		EA7A96AA2A68D8C80049195E /* Poppins-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.otf"; sourceTree = "<group>"; };
+		EA7A96AB2A68D8C80049195E /* Poppins-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		EA7A96C12A68ED410049195E /* OrdersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListView.swift; sourceTree = "<group>"; };
+		F47CAE588A7F9D3DB6144AFF /* Pods-RxSwift_MarigoldBurger_Receipt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_MarigoldBurger_Receipt.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift_MarigoldBurger_Receipt/Pods-RxSwift_MarigoldBurger_Receipt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +85,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A016627E6C053CCD4CA890 /* Pods_RxSwift_MarigoldBurger_Receipt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06CE8FF959183ED4255AF08A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F792AA68098027222530EAF /* Pods_RxSwift_MarigoldBurger_Receipt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA3185852A6690A2003D433F = {
 			isa = PBXGroup;
 			children = (
 				EA3185902A6690A2003D433F /* RxSwift_MarigoldBurger_Receipt */,
 				EA31858F2A6690A2003D433F /* Products */,
+				EB00E1D7FC06CCC2504FD4EA /* Pods */,
+				06CE8FF959183ED4255AF08A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +123,103 @@
 			children = (
 				EA3185912A6690A2003D433F /* AppDelegate.swift */,
 				EA3185932A6690A2003D433F /* SceneDelegate.swift */,
-				EA3185952A6690A2003D433F /* ViewController.swift */,
-				EA3185972A6690A2003D433F /* Main.storyboard */,
+				EA3185B12A66AA9B003D433F /* Helpers.swift */,
+				EA7A96992A68D8BA0049195E /* Font */,
+				EA3185A72A669BA2003D433F /* Model */,
+				EA3185A82A669BB0003D433F /* ViewModel */,
+				EA3185A52A669B88003D433F /* View */,
+				EA3185A62A669B8F003D433F /* Storyboard */,
 				EA31859A2A6690A3003D433F /* Assets.xcassets */,
-				EA31859C2A6690A3003D433F /* LaunchScreen.storyboard */,
 				EA31859F2A6690A3003D433F /* Info.plist */,
+				EA3185AB2A66A472003D433F /* GoogleService-Info.plist */,
 			);
 			path = RxSwift_MarigoldBurger_Receipt;
+			sourceTree = "<group>";
+		};
+		EA3185A52A669B88003D433F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA7A96C12A68ED410049195E /* OrdersListView.swift */,
+				EA7A96C02A68ED270049195E /* Controller */,
+				EA3185B52A66AD7A003D433F /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA3185A62A669B8F003D433F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EA3185972A6690A2003D433F /* Main.storyboard */,
+				EA31859C2A6690A3003D433F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EA3185A72A669BA2003D433F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA3185A92A669BD4003D433F /* MarigoldBurgerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA3185A82A669BB0003D433F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA3185AD2A66A7F3003D433F /* MarigoldBurgerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA3185B52A66AD7A003D433F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA3185B62A66AD9E003D433F /* MenuCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA7A96992A68D8BA0049195E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EA7A96A42A68D8C70049195E /* Poppins-Black.otf */,
+				EA7A969F2A68D8C70049195E /* Poppins-BlackItalic.otf */,
+				EA7A969B2A68D8C60049195E /* Poppins-Bold.otf */,
+				EA7A96A82A68D8C70049195E /* Poppins-BoldItalic.otf */,
+				EA7A96A52A68D8C70049195E /* Poppins-ExtraBold.otf */,
+				EA7A96A32A68D8C70049195E /* Poppins-ExtraBoldItalic.otf */,
+				EA7A96A72A68D8C70049195E /* Poppins-ExtraLight.otf */,
+				EA7A96A92A68D8C80049195E /* Poppins-ExtraLightItalic.otf */,
+				EA7A96A02A68D8C70049195E /* Poppins-Italic.otf */,
+				EA7A969D2A68D8C70049195E /* Poppins-Light.otf */,
+				EA7A96A12A68D8C70049195E /* Poppins-LightItalic.otf */,
+				EA7A96A62A68D8C70049195E /* Poppins-Medium.otf */,
+				EA7A96AA2A68D8C80049195E /* Poppins-MediumItalic.otf */,
+				EA7A969E2A68D8C70049195E /* Poppins-Regular.otf */,
+				EA7A969C2A68D8C60049195E /* Poppins-SemiBold.otf */,
+				EA7A96AB2A68D8C80049195E /* Poppins-SemiBoldItalic.otf */,
+				EA7A96A22A68D8C70049195E /* Poppins-Thin.otf */,
+				EA7A969A2A68D8C60049195E /* Poppins-ThinItalic.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EA7A96C02A68ED270049195E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA3185952A6690A2003D433F /* MenuController.swift */,
+				EA3185B32A66AC98003D433F /* ReceiptController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB00E1D7FC06CCC2504FD4EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F47CAE588A7F9D3DB6144AFF /* Pods-RxSwift_MarigoldBurger_Receipt.debug.xcconfig */,
+				B3A972B1C4662BADF46A67D5 /* Pods-RxSwift_MarigoldBurger_Receipt.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA3185A22A6690A3003D433F /* Build configuration list for PBXNativeTarget "RxSwift_MarigoldBurger_Receipt" */;
 			buildPhases = (
+				F8661B6B6D3A0A113FCB33C7 /* [CP] Check Pods Manifest.lock */,
 				EA31858A2A6690A2003D433F /* Sources */,
 				EA31858B2A6690A2003D433F /* Frameworks */,
 				EA31858C2A6690A2003D433F /* Resources */,
+				63F6A385CE77C568E8731F2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +282,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7A96BB2A68DA7B0049195E /* Poppins-SemiBoldItalic.otf in Resources */,
+				EA7A96B72A68DA710049195E /* Poppins-Medium.otf in Resources */,
 				EA31859E2A6690A3003D433F /* LaunchScreen.storyboard in Resources */,
+				EA7A96B62A68DA700049195E /* Poppins-LightItalic.otf in Resources */,
+				EA7A96B02A68DA610049195E /* Poppins-ExtraBold.otf in Resources */,
+				EA7A96AD2A68DA5A0049195E /* Poppins-BlackItalic.otf in Resources */,
+				EA7A96B82A68DA750049195E /* Poppins-MediumItalic.otf in Resources */,
+				EA7A96B92A68DA770049195E /* Poppins-Regular.otf in Resources */,
+				EA7A96B22A68DA670049195E /* Poppins-ExtraLight.otf in Resources */,
+				EA7A96AF2A68DA5F0049195E /* Poppins-BoldItalic.otf in Resources */,
+				EA7A96BD2A68DA7F0049195E /* Poppins-ThinItalic.otf in Resources */,
+				EA3185AC2A66A472003D433F /* GoogleService-Info.plist in Resources */,
+				EA7A96BC2A68DA7D0049195E /* Poppins-Thin.otf in Resources */,
 				EA31859B2A6690A3003D433F /* Assets.xcassets in Resources */,
+				EA7A96B42A68DA6C0049195E /* Poppins-Italic.otf in Resources */,
 				EA3185992A6690A2003D433F /* Main.storyboard in Resources */,
+				EA7A96BA2A68DA790049195E /* Poppins-SemiBold.otf in Resources */,
+				EA7A96AE2A68DA5D0049195E /* Poppins-Bold.otf in Resources */,
+				EA7A96AC2A68DA580049195E /* Poppins-Black.otf in Resources */,
+				EA7A96B12A68DA630049195E /* Poppins-ExtraBoldItalic.otf in Resources */,
+				EA7A96B52A68DA6E0049195E /* Poppins-Light.otf in Resources */,
+				EA7A96B32A68DA690049195E /* Poppins-ExtraLightItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63F6A385CE77C568E8731F2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwift_MarigoldBurger_Receipt/Pods-RxSwift_MarigoldBurger_Receipt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwift_MarigoldBurger_Receipt/Pods-RxSwift_MarigoldBurger_Receipt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwift_MarigoldBurger_Receipt/Pods-RxSwift_MarigoldBurger_Receipt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8661B6B6D3A0A113FCB33C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwift_MarigoldBurger_Receipt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA31858A2A6690A2003D433F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA3185962A6690A2003D433F /* ViewController.swift in Sources */,
+				EA3185AE2A66A7F3003D433F /* MarigoldBurgerViewModel.swift in Sources */,
+				EA3185B72A66AD9E003D433F /* MenuCell.swift in Sources */,
+				EA3185B22A66AA9B003D433F /* Helpers.swift in Sources */,
+				EA3185962A6690A2003D433F /* MenuController.swift in Sources */,
+				EA3185AA2A669BD4003D433F /* MarigoldBurgerData.swift in Sources */,
 				EA3185922A6690A2003D433F /* AppDelegate.swift in Sources */,
 				EA3185942A6690A2003D433F /* SceneDelegate.swift in Sources */,
+				EA7A96C22A68ED410049195E /* OrdersListView.swift in Sources */,
+				EA3185B42A66AC98003D433F /* ReceiptController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +506,7 @@
 		};
 		EA3185A32A6690A3003D433F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47CAE588A7F9D3DB6144AFF /* Pods-RxSwift_MarigoldBurger_Receipt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +535,7 @@
 		};
 		EA3185A42A6690A3003D433F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A972B1C4662BADF46A67D5 /* Pods-RxSwift_MarigoldBurger_Receipt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
